@@ -1,0 +1,100 @@
+/* body{
+        margin: 32px 32px;
+} */
+.container{
+    background-color: #EEEEEE;
+    border-radius: 7px;
+    box-shadow: 1px 3px 4px 1px #DDDDDD;
+    /* max-width: 1024px; не нужен */
+    width: 230px;
+    height: 320px;
+    margin: 0 auto;
+    /* padding: 16px 0; */
+    /* align-self: center; не нужен */
+}
+.header{    
+    /* align-self: center; не нужен */
+    font-family: Roboto;
+    width: 230px;
+    height: 64px;
+}
+.left{
+    float: left;
+    background-color: #DDDDDD;
+    border-radius: 24px;
+    text-align: center;
+    /* width: 50px; */
+    height: 32px;
+    margin: 16px;
+    /*left: 16px;
+    top: 16px;*/
+}
+.right{
+    float: right;
+    background-color: #DDDDDD;
+    border-radius: 24px;
+    text-align: center;
+    /* width: 50px; */
+    height: 32px;
+    margin: 16px;
+}
+p{
+    font-family: Roboto;
+    font-style: normal; /* не нужен */
+    font-size: 14px;
+    text-align: center;
+    margin: 6px 12px; 
+}
+.body{
+   /* display: block; не нужен */
+   /* padding: 7% 25%; не нужен */
+    width: 230px;
+    height: 134px;
+}
+.picture{
+    width: 124px;
+    height: 100px;
+    margin: 16px 53px;
+}
+.footer{
+    /* flex-direction: column; не нужен */
+    width: 144px;
+    height: 119px;
+    margin: 0 auto; 
+    left: 10px;
+    top: 16px;   
+}
+.up{
+    /* flex: none; не нужен */
+    /* order: 0; не нужен */
+    /* margin: 0px 345px; не нужен */
+    background: #27AE60;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    width: 124px;
+    height: 35px;
+    margin: 16px 10px 0 10px;
+    /*width: auto; не нужен */
+} 
+.down{
+    /* flex: none; не нужен */
+    /* order: 1; не нужен */
+    /* margin: 0px 370px; не нужен */
+    background: #EB5757;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: center;
+    width: 100px;
+    height: 36px;
+    margin: 16px 22px;
+    /* width: auto; не нужен */
+}
+button{
+    border: none; 
+} 
+.clear {
+    clear: both;
+}
