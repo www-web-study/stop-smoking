@@ -1,5 +1,5 @@
-var noSmokeCount = 0;
-var smokeCount = 0;
+var noSmokeCount = Number(localStorage.getItem('timesNoSmoke')); // Number('5') преобразование строки в число.
+var smokeCount = Number(localStorage.getItem('timesSmoke'));
 
 var imgCheerful;
 imgCheerful = ("images/cheerful-child.jpg");
@@ -9,6 +9,7 @@ imgSad = ("images/sad-child.jpg");
 function updateNoSmokeCount(isInitUpdate) {
   if (isInitUpdate === false) {
     noSmokeCount++;
+    localStorage.setItem('timesNoSmoke', noSmokeCount)
   }
   document.querySelector(".inc").innerHTML = noSmokeCount;
 }
@@ -16,6 +17,7 @@ function updateNoSmokeCount(isInitUpdate) {
 function updateSmokeCount(isInitUpdate) {
   if (isInitUpdate === false) {
     smokeCount++;
+    localStorage.setItem('timesSmoke', smokeCount)
   }
   document.querySelector(".dec").innerHTML = smokeCount;
 }
@@ -47,6 +49,8 @@ noSmokeButton.addEventListener("click", noSmokeCountInsert);
 
 var smokeCountButton = document.querySelector(".down");
 smokeCountButton.addEventListener("click", smokeCountInsert);
+
+
 
 
 
