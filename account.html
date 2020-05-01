@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="images/ico/smoke.ico">
+    <link rel="stylesheet" href="styles/account.css">
+    <script async src="scripts/account.js"></script>
+    <title>Вход в систему stop-smoking.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="account">
+            <a href="javascript:void(0)" class="sign_up">Sign Up</a>
+            <a href="javascript:void(0)" class="log_in">Log In</a>
+        </div>
+        <form action="" class="form_control_log_in" name="form_log_in" method="POST">
+            <div class="control_log_in">
+                <input type="text" id="username_log_in" class="button" placeholder="Username" required>
+                <input type="email" id="email" class="button" placeholder="Email" required>
+            </div>
+            <input type="submit" class="button_login" value="Log In">
+            <p>Forgot <a href="javascript:void(0)" class="link">Username/Password?</a></p>
+        </form>
+        <form action="" class="form_control_sign_up hidden" name="form_sign_up" method="POST">
+            <div class="control_sign_up">
+                <input type="text" id="username_sign_up" class="button" placeholder="Username" required>
+                <input type="email" id="email_sign_up" class="button" placeholder="Email" required>
+                <input type="password" id="password" class="button" placeholder="Password" required>
+                <input type="password" id="confirm_password" class="button" placeholder="Confirm Password" required>
+            </div>
+            <input type="submit" class="button_create" value="Create Account">
+        </form>
+        <form action="" class="form_control_forgot secret" name="form_forgot" method="POST">
+            <div class="control_reset">
+                <h1>Reset your password</h1>
+            </div>    
+            <div class="control_forgot">
+                <label for="email_reset">Enter your user account's verified email address and we will send you a password reset link.</label>
+                <input type="email" id="email_reset" class="button" placeholder="Enter your email address" required>
+                <input type="submit" class="button_reset_email" value="Send password reset email">
+            </div>
+        </form>
+    </div>
+</body>

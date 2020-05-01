@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="images/ico/smoke.ico">
     <link rel="stylesheet" href="styles/style.css">
     <script async src="scripts/container.js"></script>
     <title>stop-smoking</title>
 </head>
 <body>
     <div class="container">
+        <div class="navbar">
+            <form action="/account.html" class="form" method="GET">
+            <div class="menu">
+                <button type="button" class="btn_menu">
+                    <img src="images/ico/menu.ico" class="img">
+                </button>
+                <div class="list hidden">
+                    <input type="button" id="discharge" class="button_clear" value="clear">
+                    <button  id="log_out" class="button_out">log out</button>
+                </div>
+            </div>
+            </form>
+        </div>
         <div class="header">
             <div class="left">
                 <p>&#128685; <span class="inc">0</span></p>
@@ -23,10 +37,10 @@
         </div>
         <div class="footer">
             <div>
-                <input type="button" class="up" value="I DID IT! &#128578;">
+                <input type="button" class="up" value="i did it! &#128578;">
             </div>
             <div>
-                <input type="button" class="down" value="I CAN'T &#128549;">
+                <input type="button" class="down" value="i can't &#128549;">
             </div>
         </div>
     </div>
