@@ -63,4 +63,5 @@ function clearValue() {
   document.querySelector(".inc").innerHTML = noSmokeCount;
   document.querySelector(".dec").innerHTML = smokeCount;
   updatePicture();
+  showMenu();
 }
