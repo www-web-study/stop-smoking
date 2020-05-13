@@ -1,14 +1,14 @@
-let sign_up = document.querySelector(".sign_up");
+const sign_up = document.querySelector(".sign_up");
 sign_up.addEventListener("click", formSign);
-let log_in = document.querySelector(".log_in");
+const log_in = document.querySelector(".log_in");
 log_in.addEventListener("click", formLog);
-let forgot = document.querySelector(".link");
+const forgot = document.querySelector(".link");
 forgot.addEventListener("click", formForgot);
 
-let window_sign_up = document.querySelector(".form_control_sign_up");
-let window_log_in = document.querySelector(".form_control_log_in")
-let window_forgot = document.querySelector(".form_control_forgot")
-let window_account = document.querySelector(".account")
+const window_sign_up = document.querySelector(".form_control_sign_up");
+const window_log_in = document.querySelector(".form_control_log_in")
+const window_forgot = document.querySelector(".form_control_forgot")
+const window_account = document.querySelector(".account")
 
 function formSign() {
         window_sign_up.classList.remove("hidden");
