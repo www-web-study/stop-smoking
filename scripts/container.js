@@ -1,5 +1,5 @@
-const noSmokeCount = Number(localStorage.getItem("timesNoSmoke")); // Number('5') преобразование строки в число.
-const smokeCount = Number(localStorage.getItem("timesSmoke"));
+let noSmokeCount = Number(localStorage.getItem("timesNoSmoke")); // Number('5') преобразование строки в число.
+let smokeCount = Number(localStorage.getItem("timesSmoke"));
 function updateNoSmokeCount(isInitUpdate) {
   if (isInitUpdate === false) {
     noSmokeCount++;
@@ -15,9 +15,9 @@ function updateSmokeCount(isInitUpdate) {
   document.querySelector(".dec").innerHTML = smokeCount;
 }
 
-const imgCheerful;
+let imgCheerful;
 imgCheerful = ("images/cheerful.jpg");
-const imgSad;
+let imgSad;
 imgSad = ("images/sad.jpg");
 function updatePicture() {
   if (noSmokeCount >= smokeCount) {
@@ -28,9 +28,9 @@ function updatePicture() {
   }
 }
 
-const noSmokeButton = document.querySelector(".up");
+let noSmokeButton = document.querySelector(".up");
 noSmokeButton.addEventListener("click", noSmokeCountInsert);
-const smokeCountButton = document.querySelector(".down");
+let smokeCountButton = document.querySelector(".down");
 smokeCountButton.addEventListener("click", smokeCountInsert);
 function noSmokeCountInsert() {
   updateNoSmokeCount(false);
@@ -44,14 +44,14 @@ updateNoSmokeCount(true)
 updateSmokeCount(true)
 updatePicture()
 
-const btn_menu = document.querySelector(".btn_menu");
+let btn_menu = document.querySelector(".btn_menu");
 btn_menu.addEventListener("click", showMenu);
-const menu = document.querySelector(".list");
+let menu = document.querySelector(".list");
 function showMenu() {
   menu.classList.toggle("hidden")
 }
 
-const clear = document.querySelector(".button_clear");
+let clear = document.querySelector(".button_clear");
 clear.addEventListener("click", clearValue);
 function clearValue() {
   if (smokeCount >= 0) {
